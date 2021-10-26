@@ -12,13 +12,11 @@ const appearanceSD = 0.25;
 
 
 
+let math = 
 
 
-
-
-
-
-
+/*
+{
   const input = document.querySelector("#formGroupExampleInput");
   const log = document.getElementById("#suprq");
 
@@ -27,16 +25,8 @@ const appearanceSD = 0.25;
   function updateValue(e) {
     suprq.textContent = (e.target.value - suprqMean) / suprqSD;
   }
+}
 
-
-
-
-
-
-
-
-
-/*
 {
   const input = document.querySelector("#formGroupExampleInput1");
   const log = document.getElementById("#usability");
