@@ -10,7 +10,15 @@ const trustSD = 0.52;
 const loyaltySD = 0.46;
 const appearanceSD = 0.25;
 
-{
+
+
+
+
+
+
+
+
+
   const input = document.querySelector("#formGroupExampleInput");
   const log = document.getElementById("#suprq");
 
@@ -19,8 +27,16 @@ const appearanceSD = 0.25;
   function updateValue(e) {
     suprq.textContent = (e.target.value - suprqMean) / suprqSD;
   }
-}
 
+
+
+
+
+
+
+
+
+/*
 {
   const input = document.querySelector("#formGroupExampleInput1");
   const log = document.getElementById("#usability");
@@ -64,3 +80,4 @@ const appearanceSD = 0.25;
     appearance.textContent = (e.target.value - appearanceMean) / appearanceSD;
   }
 }
+*/
