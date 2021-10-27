@@ -20,3 +20,16 @@ tt.map((t) => {
     });
   }
 });
+
+function clearValue() {
+  document.getElementById("suprqInput").value = "";
+  document.getElementById("usabilityInput").value = "";
+  document.getElementById("trustInput").value = "";
+  document.getElementById("loyaltyInput").value = "";
+  document.getElementById("appearanceInput").value = "";
+  document.getElementById("suprq").innerHTML = "";
+  document.getElementById("usability").innerHTML = "";
+  document.getElementById("trust").innerHTML = "";
+  document.getElementById("loyalty").innerHTML = "";
+  document.getElementById("appearance").innerHTML = "";
+}

@@ -31,6 +31,11 @@ body {
   color: black;
 }
 
+.button {
+  position: absolute;
+  left: 338px;
+}
+
 .leftForm {
   padding-top: 50px;
   width: 500px;

@@ -14,148 +14,153 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<div class="inputTable">
-    <form class="leftForm container">
-        <div class="form-group">
-            <label for="formGroupExampleInput">SUPR-Q raw</label>
-            <input type="number" class="form-control" id="suprqInput" placeholder="SUPR-Q raw">
+<body>
+
+    <div class="inputTable">
+        <form class="leftForm container">
+            <div class="form-group">
+                <label for="formGroupExampleInput">SUPR-Q raw</label>
+                <input type="number" class="form-control" id="suprqInput" placeholder="SUPR-Q raw value">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Usability raw</label>
+                <input type="number" class="form-control" id="usabilityInput" placeholder="Usability raw value">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Trust raw</label>
+                <input type="number" class="form-control" id="trustInput" placeholder="Trust raw value">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Loyalty raw</label>
+                <input type="number" class="form-control" id="loyaltyInput" placeholder="Loyalty raw value">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Appearance raw</label>
+                <input type="number" class="form-control" id="appearanceInput" placeholder="Appearance raw value">
+            </div>
+
+        </form>
+
+        <div class="rightTable container align-items-center">
+            <table class="table table-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> </th>
+                        <th scope="col">Mean</th>
+                        <th scope="col">Standard Deviation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>SUPR-Q</td>
+                        <td>3,93</td>
+                        <td>0,29</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Usability</td>
+                        <td>4,06</td>
+                        <td>0,29</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Trust</td>
+                        <td>3,8</td>
+                        <td>0,52</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Loyalty</td>
+                        <td>3,91</td>
+                        <td>0,46</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Appearance</td>
+                        <td>3,88</td>
+                        <td>0,25</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Usability raw</label>
-            <input type="number" class="form-control" id="usabilityInput" placeholder="Usability raw">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Trust raw</label>
-            <input type="number" class="form-control" id="trustInput" placeholder="Trust raw">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput">Loyalty raw</label>
-            <input type="number" class="form-control" id="loyaltyInput" placeholder="Loyalty raw">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput">Appearance raw</label>
-            <input type="number" class="form-control" id="appearanceInput" placeholder="Appearance raw">
-        </div>
-    </form>
-
-    <div class="rightTable container align-items-center">
-        <table class="table table-sm">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col"> </th>
-                    <th scope="col">Mean</th>
-                    <th scope="col">Standard Deviation</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>SUPR-Q</td>
-                    <td>3,93</td>
-                    <td>0,29</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Usability</td>
-                    <td>4,06</td>
-                    <td>0,29</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Trust</td>
-                    <td>3,8</td>
-                    <td>0,52</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Loyalty</td>
-                    <td>3,91</td>
-                    <td>0,46</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Appearance</td>
-                    <td>3,88</td>
-                    <td>0,25</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-</div>
-
-
-<div class="inputTable">
-
-
-    <div class="leftForm container">
-
-        <table class="table table-striped table-dark">
-            <thead>
-                <tr>
-
-                    <th scope="col">Z-Score</th>
-                    <th scope="col">Result</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                    <td>SUPR-Q:</td>
-                    <td id="suprq"></td>
-
-                </tr>
-                <tr>
-
-                    <td>Usability:</td>
-                    <td id="usability"></td>
-
-                </tr>
-                <tr>
-
-                    <td>Trust:</td>
-                    <td id="trust"></td>
-
-                </tr>
-                <tr>
-
-                    <td>Loyalty:</td>
-                    <td id="loyalty"></td>
-
-                </tr>
-                <tr>
-
-                    <td>Appearance:</td>
-                    <td id="appearance"></td>
-
-                </tr>
-            </tbody>
-        </table>
 
     </div>
+    <div class="button">
+        <button type="button" onclick="clearValue()" class="btn btn-light">Clear input values</button>
+    </div>
+
+    <div class="inputTable">
+
+
+        <div class="leftForm container">
+
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+
+                        <th scope="col">Z-Score</th>
+                        <th scope="col">Result</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>SUPR-Q:</td>
+                        <td id="suprq"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Usability:</td>
+                        <td id="usability"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Trust:</td>
+                        <td id="trust"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Loyalty:</td>
+                        <td id="loyalty"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Appearance:</td>
+                        <td id="appearance"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
 
 
 
-    <div class="rightTable container align-items-center">
-        <p class="header text-center">Percentile:</p>
-        <p class="text-center" id="outputResult"></p>
+        <div class="rightTable container align-items-center">
+            <p class="header text-center">Percentile:</p>
+            <p class="text-center" id="outputResult"></p>
+
+        </div>
+
+
+
+    </div>
 
     </div>
 
 
 
-</div>
 
-</div>
-
-
-
-
-<script src="js\index.js"></script>
+    <script src="js\index.js"></script>
 </body>
 
 </html>
