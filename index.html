@@ -2,47 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="z-Score-Calculator">
-    <meta name="author" content="Michał Moś">
-    <title>z-Score-Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
 </head>
 
 <body>
+    <div class="firstSection">
+        <div class="up">
+            <form class="leftUpForm ">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">SUPR-Q raw</label>
+                    <input type="number" class="form-control" id="suprqInput" placeholder="SUPR-Q raw value">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Usability raw</label>
+                    <input type="number" class="form-control" id="usabilityInput" placeholder="Usability raw value">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Trust raw</label>
+                    <input type="number" class="form-control" id="trustInput" placeholder="Trust raw value">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Loyalty raw</label>
+                    <input type="number" class="form-control" id="loyaltyInput" placeholder="Loyalty raw value">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Appearance raw</label>
+                    <input type="number" class="form-control" id="appearanceInput" placeholder="Appearance raw value">
+                </div>
+            </form>
+        </div>
 
-    <div class="inputTable">
-        <form class="leftForm container">
-            <div class="form-group">
-                <label for="formGroupExampleInput">SUPR-Q raw</label>
-                <input type="number" class="form-control" id="suprqInput" placeholder="SUPR-Q raw value">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Usability raw</label>
-                <input type="number" class="form-control" id="usabilityInput" placeholder="Usability raw value">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Trust raw</label>
-                <input type="number" class="form-control" id="trustInput" placeholder="Trust raw value">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Loyalty raw</label>
-                <input type="number" class="form-control" id="loyaltyInput" placeholder="Loyalty raw value">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Appearance raw</label>
-                <input type="number" class="form-control" id="appearanceInput" placeholder="Appearance raw value">
-            </div>
+        <div class="up">
+            <table class="tbl table table-striped table-dark container">
+                <thead>
+                    <tr>
 
-        </form>
+                        <th scope="col">Measure</th>
+                        <th scope="col">Z-Score</th>
+                        <th scope="col">Result Percentile</th>
 
-        <div class="rightTable container align-items-center">
-            <table class="table table-sm">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>SUPR-Q:</td>
+                        <td id="suprq"></td>
+                        <td id="suprqPercentile"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Usability:</td>
+                        <td id="usability"></td>
+                        <td id="usabilityPercentile"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Trust:</td>
+                        <td id="trust"></td>
+                        <td id="trustPercentile"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Loyalty:</td>
+                        <td id="loyalty"></td>
+                        <td id="loyaltyPercentile"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Appearance:</td>
+                        <td id="appearance"></td>
+                        <td id="appearancePercentile"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="firstSection">
+        <div class="constTable">
+            <table class="table table-sm leftUpForm">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
@@ -85,82 +142,37 @@
                         <td>0,25</td>
                     </tr>
                 </tbody>
-            </table>
-        </div>
-
-    </div>
-    <div class="button">
-        <button type="button" onclick="clearValue()" class="btn btn-light">Clear input values</button>
-    </div>
-
-    <div class="inputTable">
-
-
-        <div class="leftForm container">
-
-            <table class="table table-striped table-dark">
-                <thead>
-                    <tr>
-
-                        <th scope="col">Z-Score</th>
-                        <th scope="col">Result</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-
-                        <td>SUPR-Q:</td>
-                        <td id="suprq"></td>
-
-                    </tr>
-                    <tr>
-
-                        <td>Usability:</td>
-                        <td id="usability"></td>
-
-                    </tr>
-                    <tr>
-
-                        <td>Trust:</td>
-                        <td id="trust"></td>
-
-                    </tr>
-                    <tr>
-
-                        <td>Loyalty:</td>
-                        <td id="loyalty"></td>
-
-                    </tr>
-                    <tr>
-
-                        <td>Appearance:</td>
-                        <td id="appearance"></td>
-
-                    </tr>
-                </tbody>
-            </table>
+            </table><a
+                href="https://uxpajournal.org/supr-q-a-comprehensive-measure-of-the-quality-of-the-website-user-experience/">
+                Author
+            </a>
 
         </div>
 
 
 
-        <div class="rightTable container align-items-center">
-            <p class="header text-center">Percentile:</p>
-            <p class="text-center" id="outputResult"></p>
-
-        </div>
-
 
 
     </div>
 
-    </div>
+
+
+
+
+
 
 
 
 
     <script src="js\index.js"></script>
+
+
+
+
+    <!--<div class="button">
+        <button type="button" onclick="clearValue()" class="btn btn-light">Clear input values</button>
+    </div>-->
+
 </body>
 
 </html>
