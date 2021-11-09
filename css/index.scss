@@ -42,6 +42,7 @@ body {
 
 
  .constTable{
+   margin-top: 400px;
         color: $font; 
 
       width: 350px;
@@ -51,7 +52,9 @@ a{
     text-decoration: none !important;
 
 }
-
+#table{
+  display: none;
+}
 
 /*.row {
   width: 100%;

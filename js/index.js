@@ -1,4 +1,4 @@
-const v = {
+/*const v = {
   suprqMean: 3.93,
   usabilityMean: 4.06,
   trustMean: 3.8,
@@ -20,6 +20,35 @@ tt.map((t) => {
     });
   }
 });
+*/
+
+function countValue() {
+  const suprqMean = 3.93;
+  const usabilityMean = 4.06;
+  const trustMean = 3.8;
+  const loyaltyMean = 3.91;
+  const appearanceMean = 3.88;
+  const suprqSD = 0.29;
+  const usabilitySD = 0.29;
+  const trustSD = 0.52;
+  const loyaltySD = 0.46;
+  const appearanceSD = 0.25;
+
+  let suprqInput = document.querySelector("suprqInput");
+  let usabilityInput = document.querySelector("usabilityInput");
+  let trustInput = document.querySelector("trustInput");
+  let loyaltyInput = document.querySelector("loyaltyInput");
+  let appearanceInput = document.querySelector("appearanceInput");
+
+
+  
+  document.getElementById("suprq").innerHTML =
+    (suprqInput - suprqMean) / suprqSD;
+  document.getElementById("usability").innerHTML = "";
+  document.getElementById("trust").innerHTML = "";
+  document.getElementById("loyalty").innerHTML = "";
+  document.getElementById("appearance").innerHTML = "";
+}
 
 function clearValue() {
   document.getElementById("suprqInput").value = "";
@@ -32,4 +61,13 @@ function clearValue() {
   document.getElementById("trust").innerHTML = "";
   document.getElementById("loyalty").innerHTML = "";
   document.getElementById("appearance").innerHTML = "";
+}
+
+function showTable() {
+  var x = document.getElementById("table");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

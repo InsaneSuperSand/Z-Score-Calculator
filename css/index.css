@@ -37,12 +37,17 @@ body {
 }
 
 .constTable {
+  margin-top: 400px;
   color: #dbdbdb;
   width: 350px;
 }
 
 a {
   text-decoration: none !important;
+}
+
+#table {
+  display: none;
 }
 
 /*.row {
