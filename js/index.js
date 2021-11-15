@@ -22,6 +22,56 @@ tt.map((t) => {
 });
 */
 
+function suprqCalculate() {
+  const suprqMean = 3.93;
+  const suprqSD = 0.29;
+  let suprqInput1 = document.querySelector("#suprqInput").value;
+  let calculateSpurq = (suprqInput1 - suprqMean) / suprqSD;
+  let round = calculateSpurq.toFixed(2);
+  document.getElementById("suprq").innerHTML = round;
+}
+function usabilityCalculate() {
+  const usabilityMean = 4.06;
+  const usabilitySD = 0.29;
+  let usabilityInput1 = document.querySelector("#usabilityInput").value;
+  let calculateUsability = (usabilityInput1 - usabilityMean) / usabilitySD;
+  let round = calculateUsability.toFixed(2);
+  document.getElementById("usability").innerHTML = round;
+}
+function trustCalculate() {
+  const trustMean = 3.8;
+  const trustSD = 0.52;
+  let trustInput1 = document.querySelector("#trustInput").value;
+  let calculateTrust = (trustInput1 - trustMean) / trustSD;
+  let round = calculateTrust.toFixed(2);
+  document.getElementById("trust").innerHTML = round;
+}
+function loyaltyCalculate() {
+  const loyaltyMean = 3.91;
+  const loyaltySD = 0.46;
+  let loyaltyInput1 = document.querySelector("#loyaltyInput").value;
+  let calculateLoyalty = (loyaltyInput1 - loyaltyMean) / loyaltySD;
+  let round = calculateLoyalty.toFixed(2);
+  document.getElementById("loyalty").innerHTML = round;
+}
+function appearanceCalculate() {
+  const appearanceMean = 3.88;
+  const appearanceSD = 0.25;
+  let appearanceInput1 = document.querySelector("#appearanceInput").value;
+  let calculateAppearance = (appearanceInput1 - appearanceMean) / appearanceSD;
+  let round = calculateAppearance.toFixed(2);
+  document.getElementById("appearance").innerHTML = round;
+}
+
+function countValue() {
+  suprqCalculate();
+  usabilityCalculate();
+  trustCalculate();
+  loyaltyCalculate();
+  appearanceCalculate();
+}
+/*
+
 function countValue() {
   const suprqMean = 3.93;
   const usabilityMean = 4.06;
@@ -40,7 +90,7 @@ function countValue() {
   let loyaltyInput1 = document.querySelector("#loyaltyInput").value;
   let appearanceInput1 = document.querySelector("#appearanceInput").value;
 
-  document.getElementById("suprq").innerHTML =
+ document.getElementById("suprq").innerHTML =
     (suprqInput1 - suprqMean) / suprqSD;
   document.getElementById("usability").innerHTML =
     (usabilityInput1 - usabilityMean) / usabilitySD;
@@ -51,7 +101,7 @@ function countValue() {
   document.getElementById("appearance").innerHTML =
     (appearanceInput1 - appearanceMean) / appearanceSD;
 }
-
+*/
 function clearValueTable() {
   document.getElementById("suprq").innerHTML = "";
   document.getElementById("usability").innerHTML = "";
