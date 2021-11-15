@@ -25,7 +25,7 @@ body {
     display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 150px;
 .up {
 
 
@@ -35,6 +35,12 @@ body {
   .leftUpForm {
   width: 600px;
 }
+
+.clearValueBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .tbl {
   width: 50%;
  
@@ -42,7 +48,7 @@ body {
 
 
  .constTable{
-   margin-top: 400px;
+   margin-top: 300px;
         color: $font; 
 
       width: 350px;

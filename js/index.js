@@ -34,28 +34,25 @@ function countValue() {
   const loyaltySD = 0.46;
   const appearanceSD = 0.25;
 
-  let suprqInput = document.querySelector("suprqInput");
-  let usabilityInput = document.querySelector("usabilityInput");
-  let trustInput = document.querySelector("trustInput");
-  let loyaltyInput = document.querySelector("loyaltyInput");
-  let appearanceInput = document.querySelector("appearanceInput");
+  let suprqInput1 = document.querySelector("#suprqInput").value;
+  let usabilityInput1 = document.querySelector("#usabilityInput").value;
+  let trustInput1 = document.querySelector("#trustInput").value;
+  let loyaltyInput1 = document.querySelector("#loyaltyInput").value;
+  let appearanceInput1 = document.querySelector("#appearanceInput").value;
 
-
-  
   document.getElementById("suprq").innerHTML =
-    (suprqInput - suprqMean) / suprqSD;
-  document.getElementById("usability").innerHTML = "";
-  document.getElementById("trust").innerHTML = "";
-  document.getElementById("loyalty").innerHTML = "";
-  document.getElementById("appearance").innerHTML = "";
+    (suprqInput1 - suprqMean) / suprqSD;
+  document.getElementById("usability").innerHTML =
+    (usabilityInput1 - usabilityMean) / usabilitySD;
+  document.getElementById("trust").innerHTML =
+    (trustInput1 - trustMean) / trustSD;
+  document.getElementById("loyalty").innerHTML =
+    (loyaltyInput1 - loyaltyMean) / loyaltySD;
+  document.getElementById("appearance").innerHTML =
+    (appearanceInput1 - appearanceMean) / appearanceSD;
 }
 
-function clearValue() {
-  document.getElementById("suprqInput").value = "";
-  document.getElementById("usabilityInput").value = "";
-  document.getElementById("trustInput").value = "";
-  document.getElementById("loyaltyInput").value = "";
-  document.getElementById("appearanceInput").value = "";
+function clearValueTable() {
   document.getElementById("suprq").innerHTML = "";
   document.getElementById("usability").innerHTML = "";
   document.getElementById("trust").innerHTML = "";
@@ -63,6 +60,13 @@ function clearValue() {
   document.getElementById("appearance").innerHTML = "";
 }
 
+function clearValueInput() {
+  document.getElementById("suprqInput").value = "";
+  document.getElementById("usabilityInput").value = "";
+  document.getElementById("trustInput").value = "";
+  document.getElementById("loyaltyInput").value = "";
+  document.getElementById("appearanceInput").value = "";
+}
 function showTable() {
   var x = document.getElementById("table");
   if (x.style.display === "block") {
