@@ -29,9 +29,6 @@ function suprqCalculate() {
   let calculateSpurq = (suprqInput1 - suprqMean) / suprqSD;
   let round = calculateSpurq.toFixed(2);
   document.getElementById("suprq").innerHTML = round;
-
-  let calculateSuprqPer = (suprqMean + suprqSD) * round;
-  document.getElementById("suprqPercentile").innerHTML = calculateSuprqPer;
 }
 function usabilityCalculate() {
   const usabilityMean = 4.06;
