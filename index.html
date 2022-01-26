@@ -38,11 +38,11 @@
                     <input type="number" class="form-control" id="appearanceInput" placeholder="Appearance raw value">
                 </div>
             </form>
-
-            <button type="button" onclick="clearValueInput()" class=" btn btn-light ">Clear Value Input!</button>
-
+            <div class="btn-class">
+                <button type="button" onclick="clearValueInput()" class="btn" id="btn-clear">Clear Value Input!</button>
+                <button type="button" onclick="countValue()" class="btn" id="equal-btn">=</button>
+            </div>
         </div>
-        <button type="button" onclick="countValue()" class="btn btn-light">=</button>
         <div class="up">
             <table class="tbl table table-striped table-dark container">
                 <thead>
@@ -93,7 +93,7 @@
                 </tbody>
             </table>
             <div class="clearValueBtn">
-                <button type="button" onclick="clearValueTable()" class=" btn btn-light ">Clear table!</button>
+                <button type="button" onclick="clearValueTable()" class="btn" id="btn-clear">Clear table!</button>
             </div>
 
 
@@ -103,7 +103,7 @@
 
 
     <div class="constTable">
-        <button type="button" onclick="showTable()" class="btn btn-light">Show table and author</button>
+        <button type="button" onclick="showTable()" class="btn" id="btn-table">Show table and author</button>
 
         <div class="tbl" id="table">
             <table class="table table-sm leftUpForm">

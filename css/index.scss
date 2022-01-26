@@ -1,14 +1,15 @@
 $orange: #2b2b2b;
 $blue: #1a1a1a;
-$font:   rgb(219, 219, 219);
+$font: rgb(219, 219, 219);
 
-$list1: $blue, $orange; 
+$list1: $blue,
+$orange;
 
-@mixin gradient($direction, $list) { 
+@mixin gradient($direction, $list) {
   background: -webkit-linear-gradient($direction, $list);
   background: -moz-linear-gradient($direction, $list);
   background: -o-linear-gradient($direction, $list);
-  background: linear-gradient($direction, $list);  
+  background: linear-gradient($direction, $list);
 }
 
 html,
@@ -21,68 +22,96 @@ body {
   @include gradient(right, $list1);
 }
 
-.firstSection{
-    display: flex;
-  justify-content: center;
+.firstSection {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 50px 50px 50px 150px;
-.up {
 
+  .up {
 
-   color: $font; 
-  width: 50%;
-  float: left;
-  .leftUpForm {
-  width: 600px;
-}
+    color: $font;
+    width: 40%;
+    float: left;
 
-.clearValueBtn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tbl {
-  width: 50%;
- 
-}}}
+    .leftUpForm {
+      width: 100%;
+    }
 
+    .clearValueBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
- .constTable{
-   margin-top: 300px;
-        color: $font; 
+    .tbl {
+      width: 50%;
 
-      width: 350px;
+    }
   }
+}
 
-a{
-    text-decoration: none !important;
+
+.constTable {
+  margin-top: 300px;
+  color: $font;
+
+  width: 350px;
+}
+
+a {
+  text-decoration: none !important;
 
 }
-#table{
+
+#table {
   display: none;
 }
 
-/*.row {
-  width: 100%;
+
+
+.btn-class {
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+
+
+
+
+
 }
 
-.leftForm {
-  justify-content: center;
-  align-items: center;
-  width: 700px;
-  padding-left: 40px;
+.btn {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border: none;
+  border-radius: 11px;
+  color: $orange;
+  font-size: 20px;
+  background-color: $font;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
 
-.col {
-  padding: 40px 40px 40px 40px;
+.btn:hover {
+  color: $font;
+  transition: all .4s ease;
+  background-color: #2A9D8F;
+  text-decoration: none;
 }
 
-.rightUpTable {
-  width: 500px;
-  padding: 0 0 0 0;
-  justify-content: center;
-  align-items: center;
-}*/
+#btn-clear:hover {
+  background-color: #E76F51;
+}
+
+#btn-table {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  bottom: 10px;
+}
+
+
+@media screen and (max-width: 1300px) {}

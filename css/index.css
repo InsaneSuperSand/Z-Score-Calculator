@@ -13,9 +13,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,12 +24,12 @@ body {
 
 .firstSection .up {
   color: #dbdbdb;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 
 .firstSection .up .leftUpForm {
-  width: 600px;
+  width: 100%;
 }
 
 .firstSection .up .clearValueBtn {
@@ -62,28 +62,45 @@ a {
   display: none;
 }
 
-/*.row {
-  width: 100%;
+.btn-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.leftForm {
-  justify-content: center;
-  align-items: center;
-  width: 700px;
-  padding-left: 40px;
+.btn {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border: none;
+  border-radius: 11px;
+  color: #2b2b2b;
+  font-size: 20px;
+  background-color: #dbdbdb;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
 
-.col {
-  padding: 40px 40px 40px 40px;
+.btn:hover {
+  color: #dbdbdb;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  background-color: #2A9D8F;
+  text-decoration: none;
 }
 
-.rightUpTable {
-  width: 500px;
-  padding: 0 0 0 0;
-  justify-content: center;
-  align-items: center;
-}*/
+#btn-clear:hover {
+  background-color: #E76F51;
+}
+
+#btn-table {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  bottom: 10px;
+}
 /*# sourceMappingURL=index.css.map */
